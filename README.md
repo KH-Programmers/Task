@@ -6,10 +6,10 @@
 
 추천 강의
 
-<깃허브>
+## 깃허브
 
 https://youtu.be/Z9dvM7qgN9s
 
-<html>
+## html
 
 https://youtu.be/OGFgdro160I?list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB
