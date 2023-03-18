@@ -8,8 +8,8 @@
 
 <깃허브>
 
-<iframe width="885" height="498" src="https://www.youtube.com/embed/Z9dvM7qgN9s" title="깃, 깃허브 제대로 배우기 (기본 마스터편, 실무에서 꿀리지 말자)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://youtu.be/Z9dvM7qgN9s
 
 <html>
 
-<iframe width="885" height="498" src="https://www.youtube.com/embed/OGFgdro160I?list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB" title="HTML - 수업소개" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://youtu.be/OGFgdro160I?list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB
