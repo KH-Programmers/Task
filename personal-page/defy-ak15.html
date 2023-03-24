@@ -1,9 +1,379 @@
-<html lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D"><head>
+<html lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+
+<head>
     <title>kanaria.codes</title>
-    <meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
-    <meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="kanaria.codes"><meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website"><meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://kanaria.codes"><meta data-n-head="ssr" data-hid="og:title" property="og:title" content="kanaria.codes"><meta data-n-head="ssr" data-hid="og:description" property="og:description" content=""><meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://kanaria.codes/ogp.png"><meta data-n-head="ssr" name="twitter:card" content="summary_large_image"><meta data-n-head="ssr" name="robots" content="noindex"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" href="/_nuxt/ccacf45.js" as="script"><link rel="preload" href="/_nuxt/82f2502.js" as="script"><link rel="preload" href="/_nuxt/b57f884.js" as="script"><link rel="preload" href="/_nuxt/86f65cc.js" as="script"><link rel="preload" href="/_nuxt/632f221.js" as="script"><style data-vue-ssr-id="fa7ff0ca:0 56b15182:0 1f83e7b0:0 56b0f96c:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}*,:after,:before{box-sizing:border-box;margin:0}html{background:#000}a:visited{color:#aaa}.container[data-v-672b21a6]{background:#000}main[data-v-672b21a6]{position:relative;margin:0 auto;min-height:100vh;text-align:center;width:1024px;color:grey}@media only screen and (max-width:1024px){main[data-v-672b21a6]{width:100%}}.full_screen[data-v-672b21a6]{width:100%;height:100vh;display:flex;justify-content:center;align-items:center}.logo[data-v-672b21a6]{margin:100px 0;position:relative;display:inline-block;width:640px}@media only screen and (max-width:1024px){.logo[data-v-672b21a6]{width:90%}}.logo .front[data-v-672b21a6]{width:100%;height:auto}.logo .back[data-v-672b21a6]{width:70%;height:auto;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}.mainvisual[data-v-672b21a6]{width:100%;position:relative;background:#000}.mainvisual .desk[data-v-672b21a6]{position:relative;width:100%;height:auto;z-index:2;image-rendering:crisp-edges}.mainvisual .monitor_contents[data-v-672b21a6]{width:68.8%;height:auto;position:absolute;left:15.1%;top:2.3%;z-index:1}.mainvisual .links[data-v-672b21a6]{position:absolute;left:0;top:0;width:100%;height:100%;z-index:3}.mainvisual .links a[data-v-672b21a6]{display:block;height:18%;width:18%;position:absolute}.three_star[data-v-672b21a6]{margin:20px;height:40px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAAtCAYAAACQ2SQmAAADgElEQVR4nOWcvWsUQRjGf24KP0BRYiXBShtR/AITwWgCFnaCfWytLMVO8S8QaztLGy1ErJJcEIyCgmgXK1ErJWgTLZKVhXnhGG5vLvPu7L2b+cGQS8jNvfs8M/PMLnu7q6QgEw4DP3M41GwcBW4BBwzUkZycTL0KzBqoIzm5mLoHmAHmDNSSnFxMveCMvWygluTkYqrM0PM55Goups67nxM55GoOpkqeCjs+VzWm7muwjpRMO2OFKx2pO1pfjak3gb2K97eFb+K5juRqtL4aU695y5pV5r26upKr0frGmlq40wPr+eTnqWC9bpW+saaeBg51QJwZL08F67mq0jfWVBFl2niu1l1ssJ6rKn1jTZURtBu4GNlHG/h5KljPVZW+MaYW3gywupTV5algNTrU+saYKuu9YFWcujwVrNat1jfGVH9Js5qroYv3Z43mqlrfGFN9sSzl6hSwADwGbgf+t8rVV8B9d0zDZnWbqPXd7u0sk8CatzxUPATuAJstCzDlRrac0x1T9PUXWAWWgSXgnftbmzSib8jUSbdLnHPt1JDZ/QdYca0S5kMCk5s0MUQbJifR1ze1+pBLTrjQh4RowuQ2TQzRhMnt6FtSTJQUCyXF+5Jis6QoE7XfJcWTkuJENZCGtP0lxd2SYi1hLU20jZLiZUkxGzie1vXtn6kH3VIgM+OM20xoWAdeu5FdjaaPwNaI/R3pG9HjnqXCBvDGzY7qmN4C/0Z8b2v6DsvUmCI0JoYYh8kaE0Mk03c7u18p4umA7f8L4F7DJoZIYXJKE0M0pm/MHfrLAy5d3QCeaY6oAWJMFhN77rjaNLEOvb6BkB/UHngBXYX/ZEQ/qdujETYXRw3WrdY3Zju95P3+CfgV0U9qFgP9fwG+GqxbrW+Mqave+Vkvoo82WAnkjy+eFdT6xpgqJ+HCslFx1t3Gog6rdav1jb2aIaNny80IqwyrzXLdKn1jTZXRYzVPhboltsrTb+2XMzIqfWNNlXXfap4KdblqNU8Flb6xpvZf3LZMXa5ar1ulr+Zm7kXjuSQMGu3WVxg0+mqe+VBdwfkR++YWuQ487/u4Kk+Pd6DuaH01M7ULhjIgV63nqRCtbw5fZfRz1XqeqsnlS8e9mtc7klxMldlZ5en3MdeSnFxMlVztSp6qyMVUydUdn6dk9nCsXkfOT9Xk9GzCk8BnA3WkBfgPxwk1glNzBdMAAAAASUVORK5CYII=);background-repeat:no-repeat;background-position:50%;background-size:contain;border:none}.sign_s[data-v-672b21a6]{margin:20px;width:400px;height:auto}@media only screen and (max-width:1024px){.sign_s[data-v-672b21a6]{width:70%}}.copy[data-v-672b21a6]{margin:30px}.shutter[data-v-7461cf20]{position:fixed;top:0;left:0;right:0;bottom:0;background-color:red;z-index:9999;-webkit-animation:byeShutter-data-v-7461cf20 2s forwards;animation:byeShutter-data-v-7461cf20 2s forwards}.shutter[data-v-7461cf20]:before{content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;background-color:#000;width:0;height:3px;-webkit-animation:shutterOpen-data-v-7461cf20 2s forwards;animation:shutterOpen-data-v-7461cf20 2s forwards}@-webkit-keyframes byeShutter-data-v-7461cf20{80%{opacity:1}to{opacity:0;display:none;z-index:-1}}@keyframes byeShutter-data-v-7461cf20{80%{opacity:1}to{opacity:0;display:none;z-index:-1}}@-webkit-keyframes shutterOpen-data-v-7461cf20{0%{width:0;height:1px}50%{width:100%;height:1px}90%{width:100%;height:100%}to{width:100%;height:100%}}@keyframes shutterOpen-data-v-7461cf20{0%{width:0;height:1px}50%{width:100%;height:1px}90%{width:100%;height:100%}to{width:100%;height:100%}}</style><link rel="preload" href="/_nuxt/static/1659780004/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1659780004/manifest.js" as="script">
-  <style type="text/css">.__nuxt-error-page{padding:1rem;background:#f7f8fb;color:#47494e;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;font-family:sans-serif;font-weight:100!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:0;right:0;bottom:0}.__nuxt-error-page .error{max-width:450px}.__nuxt-error-page .title{font-size:1.5rem;margin-top:15px;color:#47494e;margin-bottom:8px}.__nuxt-error-page .description{color:#7f828b;line-height:21px;margin-bottom:10px}.__nuxt-error-page a{color:#7f828b!important;text-decoration:none}.__nuxt-error-page .logo{position:fixed;left:12px;bottom:12px}</style><script charset="utf-8" src="/_nuxt/static/1659780004/manifest.js"></script><script charset="utf-8" src="/_nuxt/static/1659780004/payload.js"></script></head>
-  <body>
-    <div id="__nuxt"><!----><div id="__layout"><div class="container" data-v-672b21a6=""><div class="shutter" data-v-7461cf20="" data-v-672b21a6=""></div> <main data-v-672b21a6=""><div class="full_screen" data-v-672b21a6=""><h1 class="title" data-v-672b21a6=""><a href="/" data-v-672b21a6=""><span class="logo" data-v-672b21a6=""><img src="/_nuxt/img/kanaria_font.c44780a.png" alt="" width="519" height="183" class="back" data-v-672b21a6=""> <img src="/_nuxt/img/sign_l.0db4450.png" alt="kanaria" width="937" height="246" class="front" data-v-672b21a6=""></span></a></h1></div> <div id="mainvisual_wrapper" class="full_screen" data-v-672b21a6=""><div class="mainvisual" data-v-672b21a6=""><img src="/_nuxt/img/monitor_contents.f39df90.gif" alt="Monitors on desk" width="1096" height="341" class="monitor_contents" data-v-672b21a6=""> <img src="/_nuxt/img/desk_and_monitor.d4f0fc7.png" alt="Monitors on desk" width="1920" height="1096" class="desk" data-v-672b21a6=""> <p class="links" data-v-672b21a6=""><a href="https://www.youtube.com/watch?v=M9moY0hEJRE" target="_blank" rel="noopener" style="top:2%;left:22.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=cm-l2h6GB8Q" target="_blank" rel="noopener" style="top:2%;left:40.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=sSHkXxADtaE" target="_blank" rel="noopener" style="top:2%;left:58.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=KFCaSz_yYCM" target="_blank" rel="noopener" style="top:22%;left:13.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=dgS6HvEohsw" target="_blank" rel="noopener" style="top:22%;left:31.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=vB8sxY_PJ_w" target="_blank" rel="noopener" style="top:22%;left:49.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=Fk4FLklyPWk" target="_blank" rel="noopener" style="top:22%;left:67%" data-v-672b21a6=""></a></p></div></div> <div data-v-672b21a6=""><hr class="three_star" data-v-672b21a6=""> <p data-v-672b21a6=""><img src="/_nuxt/img/sign_s.92fe77c.png" alt="kanaria" width="385" height="102" class="sign_s" data-v-672b21a6=""></p> <p class="copy" data-v-672b21a6="">©2021 by Kanaria</p></div></main></div></div></div><script>window.__NUXT__=function(t){return{staticAssetsBase:"/_nuxt/static/1659780004",layout:"default",error:t,serverRendered:!0,routePath:"/",config:{_app:{basePath:"/",assetsPath:"/_nuxt/",cdnURL:t}}}}(null)</script><script src="/_nuxt/ccacf45.js" defer=""></script><script src="/_nuxt/632f221.js" defer=""></script><script src="/_nuxt/82f2502.js" defer=""></script><script src="/_nuxt/b57f884.js" defer=""></script><script src="/_nuxt/86f65cc.js" defer=""></script>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="">
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="kanaria.codes">
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://kanaria.codes">
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="kanaria.codes">
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="">
+    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://kanaria.codes/ogp.png">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="robots" content="noindex">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="https://kanaria.codes/favicon.ico">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/ccacf45.js" as="script">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/82f2502.js" as="script">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/b57f884.js" as="script">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/86f65cc.js" as="script">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/632f221.js" as="script">
+    <style data-vue-ssr-id="fa7ff0ca:0 56b15182:0 1f83e7b0:0 56b0f96c:0">
+        .nuxt-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            opacity: 1;
+            transition: width .1s, opacity .4s;
+            background-color: #000;
+            z-index: 999999
+        }
+
+        .nuxt-progress.nuxt-progress-notransition {
+            transition: none
+        }
+
+        .nuxt-progress-failed {
+            background-color: red
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        html {
+            background: #000
+        }
+
+        a:visited {
+            color: #aaa
+        }
+
+        .container[data-v-672b21a6] {
+            background: #000
+        }
+
+        main[data-v-672b21a6] {
+            position: relative;
+            margin: 0 auto;
+            min-height: 100vh;
+            text-align: center;
+            width: 1024px;
+            color: grey
+        }
+
+        @media only screen and (max-width:1024px) {
+            main[data-v-672b21a6] {
+                width: 100%
+            }
+        }
+
+        .full_screen[data-v-672b21a6] {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .logo[data-v-672b21a6] {
+            margin: 100px 0;
+            position: relative;
+            display: inline-block;
+            width: 640px
+        }
+
+        @media only screen and (max-width:1024px) {
+            .logo[data-v-672b21a6] {
+                width: 90%
+            }
+        }
+
+        .logo .front[data-v-672b21a6] {
+            width: 100%;
+            height: auto
+        }
+
+        .logo .back[data-v-672b21a6] {
+            width: 70%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto
+        }
+
+        .mainvisual[data-v-672b21a6] {
+            width: 100%;
+            position: relative;
+            background: #000
+        }
+
+        .mainvisual .desk[data-v-672b21a6] {
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            image-rendering: crisp-edges
+        }
+
+        .mainvisual .monitor_contents[data-v-672b21a6] {
+            width: 68.8%;
+            height: auto;
+            position: absolute;
+            left: 15.1%;
+            top: 2.3%;
+            z-index: 1
+        }
+
+        .mainvisual .links[data-v-672b21a6] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3
+        }
+
+        .mainvisual .links a[data-v-672b21a6] {
+            display: block;
+            height: 18%;
+            width: 18%;
+            position: absolute
+        }
+
+        .three_star[data-v-672b21a6] {
+            margin: 20px;
+            height: 40px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAAtCAYAAACQ2SQmAAADgElEQVR4nOWcvWsUQRjGf24KP0BRYiXBShtR/AITwWgCFnaCfWytLMVO8S8QaztLGy1ErJJcEIyCgmgXK1ErJWgTLZKVhXnhGG5vLvPu7L2b+cGQS8jNvfs8M/PMLnu7q6QgEw4DP3M41GwcBW4BBwzUkZycTL0KzBqoIzm5mLoHmAHmDNSSnFxMveCMvWygluTkYqrM0PM55Goups67nxM55GoOpkqeCjs+VzWm7muwjpRMO2OFKx2pO1pfjak3gb2K97eFb+K5juRqtL4aU695y5pV5r26upKr0frGmlq40wPr+eTnqWC9bpW+saaeBg51QJwZL08F67mq0jfWVBFl2niu1l1ssJ6rKn1jTZURtBu4GNlHG/h5KljPVZW+MaYW3gywupTV5algNTrU+saYKuu9YFWcujwVrNat1jfGVH9Js5qroYv3Z43mqlrfGFN9sSzl6hSwADwGbgf+t8rVV8B9d0zDZnWbqPXd7u0sk8CatzxUPATuAJstCzDlRrac0x1T9PUXWAWWgSXgnftbmzSib8jUSbdLnHPt1JDZ/QdYca0S5kMCk5s0MUQbJifR1ze1+pBLTrjQh4RowuQ2TQzRhMnt6FtSTJQUCyXF+5Jis6QoE7XfJcWTkuJENZCGtP0lxd2SYi1hLU20jZLiZUkxGzie1vXtn6kH3VIgM+OM20xoWAdeu5FdjaaPwNaI/R3pG9HjnqXCBvDGzY7qmN4C/0Z8b2v6DsvUmCI0JoYYh8kaE0Mk03c7u18p4umA7f8L4F7DJoZIYXJKE0M0pm/MHfrLAy5d3QCeaY6oAWJMFhN77rjaNLEOvb6BkB/UHngBXYX/ZEQ/qdujETYXRw3WrdY3Zju95P3+CfgV0U9qFgP9fwG+GqxbrW+Mqave+Vkvoo82WAnkjy+eFdT6xpgqJ+HCslFx1t3Gog6rdav1jb2aIaNny80IqwyrzXLdKn1jTZXRYzVPhboltsrTb+2XMzIqfWNNlXXfap4KdblqNU8Flb6xpvZf3LZMXa5ar1ulr+Zm7kXjuSQMGu3WVxg0+mqe+VBdwfkR++YWuQ487/u4Kk+Pd6DuaH01M7ULhjIgV63nqRCtbw5fZfRz1XqeqsnlS8e9mtc7klxMldlZ5en3MdeSnFxMlVztSp6qyMVUydUdn6dk9nCsXkfOT9Xk9GzCk8BnA3WkBfgPxwk1glNzBdMAAAAASUVORK5CYII=);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: contain;
+            border: none
+        }
+
+        .sign_s[data-v-672b21a6] {
+            margin: 20px;
+            width: 400px;
+            height: auto
+        }
+
+        @media only screen and (max-width:1024px) {
+            .sign_s[data-v-672b21a6] {
+                width: 70%
+            }
+        }
+
+        .copy[data-v-672b21a6] {
+            margin: 30px
+        }
+
+        .shutter[data-v-7461cf20] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: red;
+            z-index: 9999;
+            -webkit-animation: byeShutter-data-v-7461cf20 2s forwards;
+            animation: byeShutter-data-v-7461cf20 2s forwards
+        }
+
+        .shutter[data-v-7461cf20]:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #000;
+            width: 0;
+            height: 3px;
+            -webkit-animation: shutterOpen-data-v-7461cf20 2s forwards;
+            animation: shutterOpen-data-v-7461cf20 2s forwards
+        }
+
+        @-webkit-keyframes byeShutter-data-v-7461cf20 {
+            80% {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0;
+                display: none;
+                z-index: -1
+            }
+        }
+
+        @keyframes byeShutter-data-v-7461cf20 {
+            80% {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0;
+                display: none;
+                z-index: -1
+            }
+        }
+
+        @-webkit-keyframes shutterOpen-data-v-7461cf20 {
+            0% {
+                width: 0;
+                height: 1px
+            }
+
+            50% {
+                width: 100%;
+                height: 1px
+            }
+
+            90% {
+                width: 100%;
+                height: 100%
+            }
+
+            to {
+                width: 100%;
+                height: 100%
+            }
+        }
+
+        @keyframes shutterOpen-data-v-7461cf20 {
+            0% {
+                width: 0;
+                height: 1px
+            }
+
+            50% {
+                width: 100%;
+                height: 1px
+            }
+
+            90% {
+                width: 100%;
+                height: 100%
+            }
+
+            to {
+                width: 100%;
+                height: 100%
+            }
+        }
+    </style>
+    <link rel="preload" href="https://kanaria.codes/_nuxt/static/1659780004/payload.js" as="script">
+    <link rel="preload" href="https://kanaria.codes/_nuxt/static/1659780004/manifest.js" as="script">
+    <style type="text/css">
+        .__nuxt-error-page {
+            padding: 1rem;
+            background: #f7f8fb;
+            color: #47494e;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+            font-weight: 100 !important;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0
+        }
+
+        .__nuxt-error-page .error {
+            max-width: 450px
+        }
+
+        .__nuxt-error-page .title {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #47494e;
+            margin-bottom: 8px
+        }
+
+        .__nuxt-error-page .description {
+            color: #7f828b;
+            line-height: 21px;
+            margin-bottom: 10px
+        }
+
+        .__nuxt-error-page a {
+            color: #7f828b !important;
+            text-decoration: none
+        }
+
+        .__nuxt-error-page .logo {
+            position: fixed;
+            left: 12px;
+            bottom: 12px
+        }
+    </style>
+    <script charset="utf-8" src="https://kanaria.codes/_nuxt/static/1659780004/manifest.js"></script>
+    <script charset="utf-8" src="https://kanaria.codes/_nuxt/static/1659780004/payload.js"></script>
+</head>
+
+<body>
+    <div id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div class="container" data-v-672b21a6="">
+                <div class="shutter" data-v-7461cf20="" data-v-672b21a6=""></div>
+                <main data-v-672b21a6="">
+                    <div class="full_screen" data-v-672b21a6="">
+                        <h1 class="title" data-v-672b21a6=""><a href="https://kanaria.codes/" data-v-672b21a6=""><span class="logo" data-v-672b21a6=""><img src="https://kanaria.codes/_nuxt/img/kanaria_font.c44780a.png" alt="" width="519" height="183" class="back" data-v-672b21a6=""> <img src="https://kanaria.codes/_nuxt/img/sign_l.0db4450.png" alt="kanaria" width="937" height="246" class="front" data-v-672b21a6=""></span></a></h1>
+                    </div>
+                    <div id="mainvisual_wrapper" class="full_screen" data-v-672b21a6="">
+                        <div class="mainvisual" data-v-672b21a6=""><img src="https://kanaria.codes/_nuxt/img/monitor_contents.f39df90.gif" alt="Monitors on desk" width="1096" height="341" class="monitor_contents" data-v-672b21a6=""> <img src="https://kanaria.codes/_nuxt/img/desk_and_monitor.d4f0fc7.png" alt="Monitors on desk" width="1920" height="1096" class="desk" data-v-672b21a6="">
+                            <p class="links" data-v-672b21a6=""><a href="https://www.youtube.com/watch?v=M9moY0hEJRE" target="_blank" rel="noopener" style="top:2%;left:22.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=cm-l2h6GB8Q" target="_blank" rel="noopener" style="top:2%;left:40.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=sSHkXxADtaE" target="_blank" rel="noopener" style="top:2%;left:58.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=KFCaSz_yYCM" target="_blank" rel="noopener" style="top:22%;left:13.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=dgS6HvEohsw" target="_blank" rel="noopener" style="top:22%;left:31.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=vB8sxY_PJ_w" target="_blank" rel="noopener" style="top:22%;left:49.5%" data-v-672b21a6=""></a><a href="https://www.youtube.com/watch?v=Fk4FLklyPWk" target="_blank" rel="noopener" style="top:22%;left:67%" data-v-672b21a6=""></a></p>
+                        </div>
+                    </div>
+                    <div data-v-672b21a6="">
+                        <hr class="three_star" data-v-672b21a6="">
+                        <p data-v-672b21a6=""><img src="https://kanaria.codes/_nuxt/img/sign_s.92fe77c.png" alt="kanaria" width="385" height="102" class="sign_s" data-v-672b21a6=""></p>
+                        <p class="copy" data-v-672b21a6="">©2021 by Kanaria</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.__NUXT__ = function(t) {
+            return {
+                staticAssetsBase: "https://kanaria.codes/_nuxt/static/1659780004",
+                layout: "default",
+                error: t,
+                serverRendered: !0,
+                routePath: "https://kanaria.codes/",
+                config: {
+                    _app: {
+                        basePath: "https://kanaria.codes/",
+                        assetsPath: "https://kanaria.codes/_nuxt/",
+                        cdnURL: t
+                    }
+                }
+            }
+        }(null)
+    </script>
+    <script src="https://kanaria.codes/_nuxt/ccacf45.js" defer=""></script>
+    <script src="https://kanaria.codes/_nuxt/632f221.js" defer=""></script>
+    <script src="https://kanaria.codes/_nuxt/82f2502.js" defer=""></script>
+    <script src="https://kanaria.codes/_nuxt/b57f884.js" defer=""></script>
+    <script src="/_nuxt/86f65cc.js" defer=""></script>
 </body>
+
 </html>
