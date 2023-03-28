@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이건희_자기소개</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://font.elice.io/EliceDigitalCoding.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <style>
+        @import url("https://font.elice.io/EliceDigitalCoding.css");
+
+        
+
+        .bgimg {
+            width: 95vw;
+            height: auto;
+            min-height: calc(100vh - 5vw);
+            background-color: #FDF7C3;
+            /* background-image: url(_.png);
+            background-position: center center;
+            background-size: 95vw;
+            background-repeat: no-repeat;  */
+        }
+
+        body {
+            width: 95vw;
+            height: auto;
+            min-height: calc(100vh - 5vw);
+
+            margin-top: 2.5vw;
+            margin-bottom: 2.5vw;
+            margin-left: 2.5vw;
+            margin-right: 2.5vw;
+
+            background-color: #FFDEB4;
+
+        }
+
+        #home_btn {
+            background-color: transparent;
+            width: 5vw;
+            height: 5vw;
+            position: relative;
+            border: none;
+            padding: auto;
+        }
+
+
+        #home_btn_img {
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* filter: invert(50%) */
+            filter: invert(81%) sepia(46%) saturate(287%) hue-rotate(101deg) brightness(104%) contrast(94%);;
+        }
+        
+        .list{
+            text-align: center;
+            width: 60vw;
+            margin-left: 4vw;
+            margin-right: auto;
+        }
+
+        h1 {
+            white-space: nowrap;
+            text-align: center;
+            width: 95vw;
+            font-size: calc(5rem);
+            font-family: 'Elice Digital Coding', sans-serif;
+            margin: 0;
+            padding: 5vh 0vh 5vh 0vh;
+            color: #B2A4FF;
+        }
+
+        h2 {
+            white-space: nowrap;
+            text-align: left;
+            width: 70vw;
+            font-size: calc(1.5rem);
+            font-family: 'Elice Digital Coding', sans-serif;
+            margin: 0;
+            padding: 1vh 1vh 1vh 1vh;
+            color: #FFB4B4;
+        }
+
+        #Etc {
+            padding: 1vh 2vw 1vh 2vw;
+            border-radius: 15px;
+            background-color: aquamarine;
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        #Etc:hover {
+            text-decoration: none;
+            background-color: rgb(76, 150, 125);
+            color: blueviolet;
+        }
+
+        #Etc:active {
+            text-decoration: none;
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body id="page_lgh" , class="zoom">
+    <div class="bgimg">
+        <button type="button" , id="home_btn" , class="Dddff"><img src="back_arrow_left_icon.png" , id="home_btn_img"></button>
+        <h1 class="my-class">README.md</h1>
+        <ul class="list">
+            <li>
+                <h2>안녕하세요 제 이름은 이건희 입니다</h2>
+            </li>
+            <li>
+                <h2>저는 Coding을 좋아합니다</h2>
+            </li>
+            <li>
+                <h2>닉네임은 이제부터 Looparam입니다</h2>
+            </li>
+        </ul>
+        <!-- <h2><a id="Etc">세부사항</a></h2> -->
+    </div>
+    <script>
+
+        var homebtn = document.getElementById('home_btn');
+        var etc = document.getElementById('Etc');
+        var mybody = document.getElementById("page_lgh");
+        homebtn.addEventListener("click", function () {
+
+
+            mybody.style.animation = "zoom-out cubic-bezier( 0.68, -0.2,0.825, 0.115)";
+            mybody.style.animationDuration = "0.53s";
+            setTimeout(() => {
+                location.href = 'LeeGeonHee.html'
+            }, 0);
+
+
+        });
+        etc.addEventListener("click", function () {
+            mybody.style.animation = "zoom-out cubic-bezier( 0.68, -0.2,0.825, 0.115)";
+            mybody.style.animationDuration = "0.55s";
+            mybody.style.animationFillMode = "forwards";
+            setTimeout(() => {
+                location.href = 'LeeGeonHee_Etc.html'
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>이건희_자기소개</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://font.elice.io/EliceDigitalCoding.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+        
+        <style>
+            @import url("https://font.elice.io/EliceDigitalCoding.css");
+
+            .zoom {
+                /* animation: zoom-in cubic-bezier(0.175, 0.885, 0.32, 1.2);
+                animation-duration: 0.5s; */
+                size: 0%;
+            }
+            @keyframes zoom-in {
+                0% {
+                    transform: scale(0%);
+                }
+                20% {
+                    transform: scale(0%);
+                }
+
+                100% {
+                    transform: scale(100%);
+                }
+            }
+            
+            .bgimg{
+                width: 95vw;
+                height: auto;
+                min-height: calc(100vh - 5vw);
+                background-color: rgb(0, 0, 0);
+                background-image: url(keyboard-5017973.jpg);
+                background-position: center bottom;
+                background-size: 95vw calc((100vw/5700)*3706);
+                background-repeat: no-repeat;
+            }
+            
+            body{
+                width: 95vw;
+                height: auto;
+                min-height: calc(100vh - 5vw);
+
+                margin-top: 2.5vw;
+                margin-bottom: 2.5vw;
+                margin-left: 2.5vw;
+                margin-right: 2.5vw;
+
+                background-color: rgb(0, 0, 0);
+                
+            }
+            #home_btn{
+                background-color: transparent;
+                width: 5vw;
+                height: 5vw;
+                position: relative;
+                border: none;
+                padding: auto;
+            }
+            @keyframes zoom-out {
+                0% {
+                    transform: scale(100%);
+                    opacity: 100%;
+                }
+
+                90% {
+                    animation-play-state: paused;
+                }
+                100%{
+                    transform: scale(0%);
+                    opacity: 0%;
+                }
+            }
+            #home_btn_img{
+                width: 5vw;
+                height: 5vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: invert(100%)
+                
+            }
+            h1 {
+                white-space : nowrap; 
+                text-align: center;
+                width: 95vw;
+                font-size: calc(5rem);
+                font-family: 'Elice Digital Coding',sans-serif;
+                text-shadow: 0 0 7px #FF4A4A, 0 0 21px #FF4A4A, 0 0 42px #FF4A4A,
+    0 0 82px #FF4A4A,0 0 102px #FF4A4A;
+                margin: 0;
+                padding: 5vh 0vh 5vh 0vh;
+                color: #fff;
+            }
+            h2 {
+                white-space : nowrap; 
+                width: fit-content;
+                /* border: 1px solid #B6EADA;
+                border-radius: 50px;
+                background-color: #B6EADA80; */
+                font-size: calc(1.6rem);
+                font-family: 'Elice Digital Coding', sans-serif;
+                /* -webkit-text-stroke: 1px black; */
+                text-shadow: 0 0 7px #B6EADA,  0 0 21px #B6EADA, 0 0 42px #B6EADA,
+    0 0 82px #B6EADA, 0 0 102px #B6EADA;
+                margin: 2vh auto 2vh auto;
+                padding: 1vh 1vh 0.4vh 1vh;
+                color: #fff;
+            }
+            h3 {
+                white-space : nowrap; 
+                text-align: center;
+                width: fit-content;    
+                /* border: 1px solid #FFF89A;
+                border-radius: 50px;
+                background-color: #FFF89A80; */
+                font-size: calc(1rem);
+                font-family: 'Elice Digital Coding', sans-serif;
+                /* -webkit-text-stroke: 0.8px black; */
+                text-shadow: 0 0 7px #FFF89A, 0 0 21px #FFF89A, 0 0 42px #FFF89A,
+    0 0 82px #FFF89A, 0 0 102px #FFF89A;
+                margin: 2vh auto 2vh auto;
+                padding: 1vh 1vh 1vh 1vh;
+                color: #fff;
+            }
+            p{
+                white-space : nowrap; 
+                text-align: center;
+                width: 95vw;
+                font-size: calc(1.6rem);
+                font-family: 'Elice Digital Coding', sans-serif;
+                margin: 0;
+                padding: 2vh 0vh 2vh 0vh;
+                color: #fff;
+            }
+            #Etc{
+                padding: 1vh 2vw 1vh 2vw;
+                border-radius: 15px;
+                background-color: #B1BCE6CC;
+                text-decoration: none;
+                text-shadow: 0 0 7px #C886E5, 0 0 21px #C886E5, 0 0 42px #C886E5,
+    0 0 82px #C886E5, 0 0 102px #C886E5;
+                color: blueviolet;
+            }
+            #Etc:hover{
+                text-decoration: none;
+                background-color: #B1BCE6FF;
+                color: blueviolet;
+            }
+            #Etc:active{
+                text-decoration: none;
+                color: blueviolet;
+            }
+            
+        </style>
+
+    </head>
+    <body id="page_lgh", class="zoom">
+        <div class="bgimg">
+            <button type="button", id="home_btn", class="Dddff"><img src="home-icon.png", id="home_btn_img"></button>
+            <h1 class="my-class">LeeGeonHee's <br/> Self Introduction</h1>
+            <h2>안녕하세요!!!</h2>
+            <h2>이번에(2023년도) [Programmers'] 동아리에 들어온 이건희 입니다</h2>
+            <h3>세부정보는 아래 버튼에 있습니다!</h3>
+            <p><a id="Etc">README.md</a></p>
+        </div>
+        <script>
+
+            var homebtn = document.getElementById('home_btn');
+            var etc = document.getElementById('Etc');
+            var mybody = document.getElementById("page_lgh");
+            window.addEventListener('load', function () {
+                console.log("dd");
+                mybody.style.animation = "zoom-in cubic-bezier(0.175, 0.885, 0.32, 1.2)";
+                mybody.style.animationDuration = "0.5s";
+                setTimeout(() => {
+                    // location.href = ''
+                }, 500);
+            });
+            homebtn.addEventListener("click", function () {
+
+
+                mybody.style.animation = "zoom-out cubic-bezier( 0.68, -0.2,0.825, 0.115)";
+                mybody.style.animationDuration = "0.53s";
+                setTimeout(() => {
+                    location.href = '../../main.html'
+                }, 500);
+                
+
+            });
+            etc.addEventListener("click",function(){
+                mybody.style.animation = "zoom-out cubic-bezier( 0.68, -0.2,0.825, 0.115)";
+                mybody.style.animationDuration = "0.54s";
+                mybody.style.animationFillMode = "forwards";
+                setTimeout(() => {
+                    location.href = 'LeeGeonHee_Etc.html'
+                }, 500);
+            });
+        </script>
+    </body>
+</html>
