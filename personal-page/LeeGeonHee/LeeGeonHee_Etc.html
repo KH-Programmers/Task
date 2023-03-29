@@ -61,14 +61,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             /* filter: invert(50%) */
-            filter: invert(81%) sepia(46%) saturate(287%) hue-rotate(101deg) brightness(104%) contrast(94%);;
+            filter: invert(83%) sepia(16%) saturate(1242%) hue-rotate(179deg) brightness(102%) contrast(103%);
         }
         
         .list{
             text-align: center;
-            width: 60vw;
+            width: 80vw;
             margin-left: 4vw;
-            margin-right: auto;
+            margin-right: 4vw;
+        }
+        
+        summary{
+            width: 10vw;
         }
 
         h1 {
@@ -78,21 +82,38 @@
             font-size: calc(5rem);
             font-family: 'Elice Digital Coding', sans-serif;
             margin: 0;
-            padding: 5vh 0vh 5vh 0vh;
+            padding: 5vh 0vh 2vh 0vh;
             color: #B2A4FF;
+            
         }
 
         h2 {
-            white-space: nowrap;
             text-align: left;
-            width: 70vw;
+            width: calc(80vw - 40px);
             font-size: calc(1.5rem);
             font-family: 'Elice Digital Coding', sans-serif;
             margin: 0;
             padding: 1vh 1vh 1vh 1vh;
             color: #FFB4B4;
         }
-
+        h2:hover{
+            background-color: #e1ff9c;
+            border-radius: 50px;
+        }
+        #inf_1 {
+            text-align: center;
+            width: 70vw;
+            font-size: calc(1.5rem);
+            margin: auto;
+            color: #84A1BE;
+        }
+        #inf_3{
+            display: none;
+        }
+        #inf_2:hover{
+            background-color: #DFBAF7;
+            border-radius: 50px;
+        }
         #Etc {
             padding: 1vh 2vw 1vh 2vw;
             border-radius: 15px;
@@ -119,21 +140,35 @@
     <div class="bgimg">
         <button type="button" , id="home_btn" , class="Dddff"><img src="back_arrow_left_icon.png" , id="home_btn_img"></button>
         <h1 class="my-class">README.md</h1>
+        <h2 id="inf_1">저는 경희고 1학년 8반 22번 이건희 입니다</h2>
         <ul class="list">
+            
             <li>
-                <h2>안녕하세요 제 이름은 이건희 입니다</h2>
+                <h2>
+                    닉네임은 이번기회에 만들어서 Looparam입니다</br>
+                    (나름 의미를 만들긴 했지만 이상해서 말은 안하겠습니다)
+                </h2>
             </li>
             <li>
-                <h2>저는 Coding을 좋아합니다</h2>
+                <h2 id="inf_2">코딩은 초등학교 6학년 12월에 시작했습니다</h2>
+                <ul id="inf_3">
+                    <li><h2>중1때 C언어, 아두이노를 배우고</h2></li>
+                    <li><h2>중2 중반부터는 유니티배우면서 C#도 배우고</h2></li>
+                    <li><h2>이후부터 중3말까지 Python배워서 Tensorflow해보았습니다.</h2></li>
+                    <li><h2>중간중간에 web부분도 살짝봐보고, 보안쪽도 관심은 가졌었는데 아직입니다 ㅋㅋ;;</h2></li>
+                    <li><h2>그리고 유니티하면서 완성한 게임은 없어도 제일 잘 다룰 수 있는 프로그램입니다</h2></li>
+                    <li><h2>앱개발도 찍먹하고싶었는데 알고있는 언어도 부족해서 다뤄보진 못했습니다</h2></li>
+                </ul>
             </li>
             <li>
-                <h2>닉네임은 이제부터 Looparam입니다</h2>
+                <h2>이제 고등학교 3년동안 프로젝트도 많이하고 중학교때 못배운 개념들도 배우고</h2>
+                <h2>제 진로와 비슷한 선배, 친구들과 다양한 경험을 만들어 졸업하는게 제 목표입니다!</h2>
             </li>
         </ul>
         <!-- <h2><a id="Etc">세부사항</a></h2> -->
     </div>
     <script>
-
+        var toggle_inf_2 = 0;
         var homebtn = document.getElementById('home_btn');
         var etc = document.getElementById('Etc');
         var mybody = document.getElementById("page_lgh");
@@ -148,13 +183,11 @@
 
 
         });
-        etc.addEventListener("click", function () {
-            mybody.style.animation = "zoom-out cubic-bezier( 0.68, -0.2,0.825, 0.115)";
-            mybody.style.animationDuration = "0.55s";
-            mybody.style.animationFillMode = "forwards";
-            setTimeout(() => {
-                location.href = 'LeeGeonHee_Etc.html'
-            }, 500);
+
+
+        document.getElementById('inf_2').addEventListener("click", function () {
+            document.getElementById('inf_3').style.display = (toggle_inf_2 == 0) ? "table" : "none";
+            toggle_inf_2 = !toggle_inf_2;
         });
     </script>
 </body>
